@@ -1,29 +1,22 @@
 /*
  * HTTP communication between ESP8266 and Jeedom Smart Home Server
  * Communication HTTP (TCP/IP) entre ESP8266 et le serveur domotique Jeedom
- * Copyright (C) 2017 https://www.projetsdiy.fr - http://www.diyprojects.io
- *   
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * ESP8266 compatible Arduino
+ * 3 portes, un capteur de luminosité et un capteur DHT22 (temperature et
+ * humidité)
  */
+
+
 #include <ESP8266WebServer.h>
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 #include <WiFiClientSecure.h>
+
 // Temperature sensor
+
 #include "DHT.h"
 
-#define DHTPIN D1     // what digital pin we're connected to
+#define DHTPIN D1     // Digital pin we're connected to
 #define DHTTYPE DHT22   // DHT 22  (AM2302), AM2321
 
 DHT dht(DHTPIN, DHTTYPE);
