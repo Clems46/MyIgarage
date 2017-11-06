@@ -36,11 +36,11 @@ int buffer_porte1 = 0;
 int buffer_porte2 = 0;
 int buffer_porte3 = 0;
  
-const char* ssid     = "Livebox-bca8";
-const char* password = "5794913D19FE17D5CD643F5572";
-const char* host     = "192.168.1.83";  //IP du Jeedom
+const char* ssid     = "****";
+const char* password = "****";
+const char* host     = "192.168.1.**";  //IP du Jeedom
 const int   port     = 80;
-const char* apiKey   = "9NDFnv5vdjaDgdSV3q1DQyLreyqYAjxr";
+const char* apiKey   = "****";
 const char* IDporte1 = "65";
 const char* IDporte2 = "67";
 const char* IDporte3 = "68";
